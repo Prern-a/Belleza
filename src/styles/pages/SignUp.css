@@ -1,0 +1,245 @@
+  
+  .leftContainer2{
+    width: 40%;
+    height: 100vh;
+    background-color: #96E0FC;
+    float: left;
+    border-right: solid 3px #171717;
+  }
+
+  #SignUpDiv{
+    position: relative;
+    height: 126vh;
+  }
+  
+  #loginText2{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 3.5rem;
+  }
+  
+  #loginUsingSocial2{
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  #socialIcons2{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fa { 
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: #53503F;
+  }
+  
+  .fa-facebook{
+    margin-left: 3%;
+  }
+  
+  .fa-google:hover {
+    color: red;
+  }
+  
+  .fa-facebook:hover {
+    color: blue;
+    margin-left: 3%;
+  }
+  
+  #nameID2{
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-top: 1%;
+  }
+  
+  #nameInput2{
+    margin-left: auto;
+    border: solid 3px;
+    width: 40%;
+    padding: 1% 1% 1% 1%;
+    background-color: #96E0FC;
+    font-size: 1.5rem;
+    border-radius: 1.4rem;
+    margin-bottom: 1%;
+  }
+  
+  #usernameID2{
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+  }
+  
+  #usernameInput2{
+    margin-left: auto;
+    border: solid 3px;
+    width: 40%;
+    padding: 1% 1% 1% 1%;
+    background-color: #96E0FC;
+    font-size: 1.5rem;
+    border-radius: 1.4rem;
+    margin-bottom: 2%;
+  }
+  
+  ::placeholder{
+    opacity: 1;
+    color: #171717;
+  }
+  
+  #passwordID2{
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  #passwordInput2{
+    margin-left: auto;
+    border: solid 3px;
+    width: 40%;
+    padding: 1% 1% 1% 1%;
+    background-color: #96E0FC;
+    font-size: 1.5rem;
+    border-radius: 1.4rem;
+  }
+  
+  .toggleButton2{
+    position: absolute;
+    z-index: 10;
+    left: 64.5%;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    border: none;
+    background-color: #53503F;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 1.4rem;
+  }
+  
+  .toggleButton2:hover{
+    background-color: #0A0908;
+    cursor: pointer;
+  }
+  
+  #submitButton2{
+    text-align: center;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #0A0908;
+    color: white;
+    font-size: 2rem;
+    transition: 0.3s;
+  }
+  
+  #submitButton2:hover{
+    border: solid 1px black;
+    background-color: whitesmoke;
+    color: #171717;
+    cursor: pointer;
+  }
+  
+  #AdminIcon2{
+    height: 10%;
+    width: 10%;
+    margin-left:70%;
+    margin-top: 11%;
+  }
+  
+  #adminButton2{
+    position: absolute;
+    top: 70%;
+    left: 88%;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+    margin-top: 1rem;
+    padding-top: 0.3%;
+    padding-bottom: 0.5%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #1295A6;
+    color: white;
+    font-size: 1.7rem;
+  }
+  
+  #adminButton2:hover{
+    background-color: #171717;
+    color: #96E0FC;
+    cursor: pointer;
+  }
+  
+  .rightContainer2{
+    width: 60%;
+    margin-left: 40%;
+    background-color: whitesmoke;
+    height: 100vh;
+  }
+  
+  #newHere2{
+    font-size: 3rem;
+    text-align: center;
+    color: #171717;
+    margin-top: 1%;
+  }
+  
+  #SignUpText2{
+    font-size: 2rem;
+    text-align: center;
+    color: #171717;
+    margin-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  
+  .offers2{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #171717;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  #Logo2{
+    width: 30%;
+    height: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+  }
+  
+  #signUpButton2{
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #0A0908;
+    color: white;
+    font-size: 2rem;
+    transition: 0.3s;
+  }
+  
+  #signUpButton2:hover{
+    background-color: whitesmoke;
+    color: #0A0908;
+    cursor: pointer;
+  }

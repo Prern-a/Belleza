@@ -1,0 +1,132 @@
+#FooterCase{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+}
+
+#Footer{
+    height: 26vh;
+    background-color: white;
+    border-top: solid 2px black;
+    position: relative; 
+}
+
+#FooterCustomerCare{
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    font-size: 150%;
+}
+
+.FooterCCLinks{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    font-size: 120%;
+    text-decoration: none;
+    color: #171717;
+}
+
+.FooterCCLinks:hover{
+    text-decoration: underline;
+}
+
+#FooterAboutUs{
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    font-size: 150%;
+}
+
+.FooterAULinks{
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    font-size: 120%;
+    text-decoration: none;
+    color: #171717;
+}
+
+.FooterAULinks:hover{
+    text-decoration: underline;
+}
+
+#FooterInfo{
+    position: absolute;
+    top: 8%;
+    left: 36%;
+    font-size: 150%;
+}
+
+.FooterInfoLinks{
+    position: absolute;
+    top: 32%;
+    left: 36%;
+    font-size: 120%;
+    text-decoration: none;
+    color: #171717;
+}
+
+.FooterInfoLinks:hover{
+    text-decoration: underline;
+}
+
+.FooterBelleza{
+    font-size: 120%;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#FooterKeepUpToDate{
+    position: absolute;
+    top: 10%;
+    left: 57.5%;
+    font-size: 150%;
+}
+
+#FooterInput{
+    position: absolute;
+    font-size: 120%;
+    padding: 0.25%;
+    top: 37.5%;
+    left: 57.5%;
+    width: 15%;
+}
+
+#FooterSubscribe{
+    position: absolute;
+    top: 37.5%;
+    left: 72.5%;
+    background-color: #171717;
+    color: white;
+    font-size: 120%;
+    padding: 0.25%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+#FooterSubscribe:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #171717;
+}
+
+#FooterKeepInTouch{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    font-size: 150%;
+}
+
+#FooterSocialIcons{
+    position: absolute;
+    top: 37.5%;
+    left: 79.75%;
+    display: flex;
+    margin-right: 7.5%;
+}
+
+.FooterSocials{
+    width: 50%;
+}

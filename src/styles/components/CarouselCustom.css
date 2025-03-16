@@ -1,0 +1,81 @@
+#Carousel1 {
+    display: flex;
+    justify-content: right;
+}
+
+#Carousel1Text {
+    color: whitesmoke;
+    font-size: 400%;
+    text-align: center;
+    width: 40%;
+    margin-top: 13%;
+    margin-right: 7%;
+}
+
+
+#Carousel1Button {
+    position: absolute;
+    left: 20%;
+    top: 57%;
+    height: 7.5%;
+    width: 16%;
+    font-size: 200%;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#Carousel1Button:hover {
+    cursor: pointer;
+    color: #61859B;
+    background-color: black;
+}
+
+#Carousel1Img {
+    width: 47%;
+}
+
+#Carousel2Img {
+    width: 49%;
+    margin-left: 51%;
+}
+
+#Carousel2Text {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: whitesmoke;
+    font-size: 400%;
+}
+
+#Carousel2Button {
+    position: absolute;
+    left: 17%;
+    top: 55%;
+    background-color: black;
+    color: #61859B;
+    height: 7.5%;
+    width: 16%;
+    font-size: 200%;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: solid 3px black;
+}
+
+#Carousel2Button:hover {
+    cursor: pointer;
+    border: solid 3px black;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#Carousel2Text {
+    font-size: 400%;
+    width: 40%;
+    margin-top: 5%;
+}
+
+#Carousel3Img {
+    height: 91vh;
+}

@@ -1,0 +1,137 @@
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20vw;
+    height: 50vh;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.chatbot.open {
+    display: flex;
+}
+
+#ChatboxInput {
+    width: 73%;
+    padding: 10px;
+    border: none;
+    border: 3px solid #000;
+    outline: none;
+    font-size: 100%;
+    border-radius: 10px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+#ChatboxInput::placeholder {
+    color: white;
+}
+
+#ChatboxSend {
+    width: 8%;
+    position: absolute;
+    bottom: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chat-body {
+    padding: 10px;
+    max-height: 350px;
+    overflow-y: auto;
+    flex-grow: 1;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.message {
+    margin: 5px 0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#MessageUser {
+    margin: 0px;
+    background-color: lightgrey;
+    width: fit-content;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: -15px;
+    transition: 0.5s;
+}
+
+#MessageBot {
+    margin: 0px;
+    background-color: lightgrey;
+    width: fit-content;
+    float: left;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: -15px;
+    width: 90%;
+    transition: 0.5s;
+}
+
+.message.user {
+    text-align: right;
+    color: blue;
+}
+
+.message.bot {
+    text-align: left;
+    color: green;
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 120%;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Space between cards */
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}

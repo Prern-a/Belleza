@@ -1,0 +1,264 @@
+.NavbarContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid #171717;
+    font-family: 'Montserrat';
+    top: 0;
+    z-index: 1;
+    height: 9vh;
+    position: sticky;
+}
+
+.NavbarLeft {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #1295A6;
+    font-weight: 700;
+    column-gap: 60px;
+    font-size: 150%;
+    margin-left: 3%;
+    width: 50%;
+}
+
+.NavbarLogo {
+    width: 10%;
+    margin-left: 53%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links div {
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-links div:hover {
+    color: #007bff;
+}
+
+.NavbarRight {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    color: #000;
+    font-weight: 700;
+    column-gap: 20px;
+    font-size: 130%;
+    width: 70%;
+    margin-right: 3.75%;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 150px;
+}
+
+#search input::placeholder {
+    color: #777;
+}
+
+#cart,
+#about_us,
+#navbar-home {
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+
+#cart:hover {
+    color: #007bff;
+}
+
+#about_us:hover {
+    color: #007bff;
+}
+
+#navbar-home:hover {
+    color: #007bff;
+}
+
+#cart .cart-icon,
+#wishlist .wishlist-icon,
+#account .account-icon {
+    font-size: 20px;
+}
+
+#cart .cart-count {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#NewDropdown {
+    margin-top: 0%;
+    margin-left: 1%;
+    position: relative;
+    display: inline-block;
+}
+
+#NewDropdown:hover {
+    cursor: pointer;
+}
+
+#NewDropdownContent {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    width: 300%;
+    margin-top: 0%;
+    box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    left: -10%;
+    top: 100%;
+}
+
+#NewDropdownContent a {
+    color: #1295A6;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 90%;
+}
+
+#NewDropdownContent a:hover {
+    background-color: black;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#NewDropdown:hover #NewDropdownContent {
+    display: block;
+}
+
+#SkinDropdownContent {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    width: 200%;
+    margin-top: 0%;
+    box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    left: -7%;
+    top: 100%;
+}
+
+#SkinDropdownContent a {
+    color: #1295A6;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 90%;
+}
+
+#SkinDropdownContent a:hover {
+    background-color: black;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#NewDropdown:hover #SkinDropdownContent {
+    display: block;
+}
+
+#GiftDropdownContent {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    width: 240%;
+    margin-top: 0%;
+    box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    left: -7%;
+    top: 100%;
+}
+
+#GiftDropdownContent a {
+    color: #1295A6;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 90%;
+}
+
+#GiftDropdownContent a:hover {
+    background-color: black;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#NewDropdown:hover #GiftDropdownContent {
+    display: block;
+}
+
+#AccountDropdownContent {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    width: 180%;
+    margin-top: 0%;
+    box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    left: -7%;
+    top: 100%;
+}
+
+#AccountDropdownContent a {
+    color: black;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 90%;
+    transition: 0.3s;
+}
+
+#AccountDropdownContent a:hover {
+    cursor: pointer;
+    color: #007bff;
+    opacity: 1;
+}
+
+#NewDropdown:hover #AccountDropdownContent {
+    display: block;
+}
+
+#CartCount {
+    font-size: 120%;
+    background-color: lightgray;
+    padding: 7%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-radius: 50%;
+}

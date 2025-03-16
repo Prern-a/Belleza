@@ -1,0 +1,121 @@
+#CardMain{
+    width: 20vw;
+    height: 40vh;
+}
+
+#CardMain img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#Card{
+    position: relative;
+    width: 20vw;
+    height: 40vh;
+    margin-left: 9%;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+#Card:active{
+    cursor: grabbing;
+}
+
+#CardDescDiv{
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+
+#CardDescDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#CardAddToCart{
+    position: absolute;
+    top: 85%;
+    left: 18%;
+    margin-left: 0%;
+    width: 64%;
+    height: 10%;
+    font-size: 150%;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#CardAddToCart:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.4);
+}
+
+#Card:hover #CardDescDiv{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.4);
+}
+
+#Card:hover #CardProductName{
+    font-size: 120%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#Card:hover #CardProductPrice{
+    font-size: 120%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#BelleZaFavTag{
+    position: absolute;
+    background-color: white;
+    color: #1295A6;
+    left: 52%;
+    top: 3%;
+    font-size: 120%;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+#CardProductName{
+    text-align: center;
+    font-size: 110%;
+    margin-top: 1%;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-bottom: 0%;
+}
+
+#CardProductName:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#CardProductPrice{
+    text-align: center;
+    font-size: 110%;
+    margin-top: 0%;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#CardProductPrice:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,199 @@
+body {
+    overflow-x: hidden;
+}
+
+#MoisturizerContainer {
+    display: flex;
+    position: relative;
+}
+
+#LeftPlateProducts {
+    position: sticky;
+    top: 10%;
+    background-color: #61859B;
+    height: 75vh;
+    width: 24.5%;
+    margin-left: 0.5%;
+    border-radius: 30px;
+    margin-top: 0.5%;
+    transition: top 0.3s ease;
+    max-height: 100vh;
+}
+
+#LeftPlateProducts:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+#ProductsAvail {
+    font-size: 150%;
+    margin-left: 5%;
+    color: white;
+}
+
+#RatingsSortTitle {
+    font-size: 150%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    color: white;
+}
+
+.RatingsSort {
+    font-size: 150%;
+    margin-left: 5%;
+    color: white;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 37%;
+}
+
+.RatingsSort:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#AvailCheckbox {
+    zoom: 1.5;
+}
+
+#AvailCheckbox:hover {
+    cursor: pointer;
+}
+
+#PriceSliderTitle {
+    font-size: 150%;
+    margin-left: 5%;
+    color: white;
+}
+
+#PriceSlider {
+    width: 50%;
+}
+
+#LeftMinPrice {
+    font-size: 150%;
+    width: 18%;
+    margin-left: 3%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 20%;
+    text-align: right;
+    padding-right: 3%;
+}
+
+#ApplyPriceButton {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 150%;
+    padding: 3%;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+#ApplyPriceButton:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#RightPlateProducts {
+    background-color: #D5E7F1;
+    width: 74%;
+    margin-left: 0.5%;
+    border-radius: 20px;
+    margin-top: 0.5%;
+    margin-bottom: 15%;
+    position: relative;
+}
+
+#TotalProductsCount {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+#CategoryDropdown {
+    display: flex;
+    width: 30%;
+    position: absolute;
+    left: 56%;
+    top: 0%;
+}
+
+#CategoryDropdown1 {
+    display: flex;
+    width: 30%;
+    position: absolute;
+    left: 54%;
+    top: 0.4%;
+}
+
+#CategoryLabel {
+    font-size: 150%;
+    margin: 0%;
+}
+
+#CategorySelect {
+    width: 50%;
+    font-size: 120%;
+    border-radius: 10px;
+    margin-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+#CategorySelect:hover {
+    cursor: pointer;
+}
+
+#SortByDropdown {
+    display: flex;
+    width: 30%;
+    position: absolute;
+    left: 78%;
+    top: 1%;
+}
+
+#SortByDropdown1 {
+    display: flex;
+    width: 30%;
+    position: absolute;
+    left: 78%;
+    top: 0.4%;
+}
+
+#SortByLabel {
+    font-size: 150%;
+    margin: 0%;
+}
+
+#SortBySelect {
+    width: 50%;
+    font-size: 120%;
+    border-radius: 10px;
+    margin-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+#SortBySelect:hover {
+    cursor: pointer;
+}
+
+#ProductsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 0%;
+    background-color: #D5E7F1;
+    border-radius: 1%;
+    padding-bottom: 2%;
+    min-height: 82vh;
+}

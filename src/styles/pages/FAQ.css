@@ -1,0 +1,22 @@
+#FAQContainer {
+    width: 60%;
+    margin-left: 20%;
+}
+
+#FAQHeading {
+    font-size: 250%;
+    margin-top: 9.5%;
+    margin-bottom: 2%;
+}
+
+#FAQProductsHeading {
+    font-size: 150%;
+}
+
+#FAQProducts {
+    margin-top: 3%;
+}
+
+#FAQOrders {
+    margin-top: 3%;
+}

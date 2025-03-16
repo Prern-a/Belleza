@@ -1,0 +1,191 @@
+#CartContainer{
+    display: flex;
+    position: relative;
+    height: 117vh;
+}
+
+#CartLeftDiv{
+    width: 40%;
+    margin-left: 20%;
+    margin-top: 1%;
+    padding: 3px;
+    border: 1px solid gray;
+    height: 74%;
+}
+
+#YourCartTitle{
+    font-size: 200%;
+    margin-left: 3%;
+}
+
+#CartHeader{
+    background-color: lightgray;
+    display: flex;
+}
+
+#CartProductComponent{
+    background-color: whitesmoke;
+    display: flex;
+    position: relative;
+    padding: 1%;
+    margin-top: 1%;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 97.75%;
+}
+
+#CartProductImage{
+    width: 20%;
+}
+
+#CartProductName{
+    font-size: 150%;
+    width: 40%;
+    margin-left: 1%;
+    margin-top: 0%;
+}
+
+#CartProductPrice{
+    position: absolute;
+    left: 21.5%;
+    top: 32%;
+    font-size: 150%;
+    background-color: grey;
+    padding: 0.5%;
+    padding-bottom: 0.7%;
+    border-radius: 10px;
+    color: white;
+}
+
+#CartProductFav{
+    position: absolute;
+    left: 21.5%;
+    top:60%;
+    font-size: 150%;
+    background-color: grey;
+    padding: 0.5%;
+    padding-top: 0%;
+    padding-bottom: 0.2%;
+    border-radius: 10px;
+    color: white;
+    background-color: #1295A6;
+}
+
+#CartQuantityContainer{
+    display: flex;
+    position: absolute;
+    left: 65.4%;
+    top: 33%;
+}
+
+#CartQuantityLeft{
+    font-size: 200%;
+    margin-right: 3%;
+    transition: 0.5s;
+}
+
+#CartQuantityLeft:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#CartQuantity{
+    font-size: 200%;
+    margin: 0%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: 1px solid black;
+}
+
+#CartQuantityRight{
+    font-size: 200%;
+    margin-left: 3%;
+    transition: 0.5s;
+}
+
+#CartQuantityRight:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#CartProductTotal{
+    position: absolute;
+    font-size: 200%;
+    left: 86%;
+    top: 14%;
+}
+
+#CartProductsDiv{
+    height: 74vh;
+    overflow: auto;
+}
+
+#CartDeleteButton{
+    position: absolute;
+    width: 20%;
+    font-size: 150%;
+    left: 21.5%;
+    top: 74%;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+#CartDeleteButton:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px red;
+}
+
+#CartRightDiv{
+    position: sticky;
+    top: 10%;
+    width: 19%;
+    margin-top: 1%;
+    margin-left: 1%;
+    padding: 3px;
+    border: 1px solid gray;
+    height: 25%;
+}
+
+#CartOrderSummary{
+    font-size: 150%;
+    text-align: center;
+}
+
+#CartOrderItems{
+    font-size: 150%;
+    margin-left: 3%;
+    font-weight: 400;
+}
+
+#CartOrderSubtotal{
+    font-size: 150%;
+    margin-left: 3%;
+    font-weight: 400;
+}
+
+#CartOrderButton{
+    background-color: #1295A6;
+    width: 80%;
+    font-size: 150%;
+    color: aliceblue;
+    border: none;
+    margin-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    transition: 0.4s;
+}
+
+#CartOrderButton:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #1295A6;
+}
+
+#CartGPayButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
