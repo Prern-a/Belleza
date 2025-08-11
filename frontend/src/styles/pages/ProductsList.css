@@ -1,0 +1,401 @@
+/* Base styles */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#MoisturizerContainer {
+    display: flex;
+    position: relative;
+}
+
+#LeftPlateProducts {
+    position: sticky;
+    top: 10%;
+    background-color: #61859B;
+    height: 70vh;
+    width: 24.5%;
+    margin-left: 0.5%;
+    border-radius: 30px;
+    margin-top: 0.5%;
+    transition: top 0.3s ease;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#LeftPlateProducts:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+#ProductsAvail {
+    font-size: 150%;
+    margin-left: 5%;
+    color: white;
+}
+
+#RatingsSortTitle {
+    font-size: 150%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    color: white;
+}
+
+.RatingsSort {
+    font-size: 120%;
+    margin-left: 5%;
+    color: white;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 37%;
+}
+
+.RatingsSort:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#AvailCheckbox {
+    transform: scale(1.5);
+}
+
+#AvailCheckbox:hover {
+    cursor: pointer;
+}
+
+#PriceSliderTitle {
+    font-size: 150%;
+    margin-left: 5%;
+    color: white;
+}
+
+#PriceSlider {
+    width: 50%;
+}
+
+#LeftMinPrice {
+    font-size: 150%;
+    width: 18%;
+    margin-left: 3%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 20%;
+    text-align: right;
+    padding-right: 3%;
+}
+
+#ApplyPriceButton {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 150%;
+    padding: 3%;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+#ApplyPriceButton:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#RightPlateProducts {
+    background-color: #D5E7F1;
+    width: 74%;
+    margin-left: 0.5%;
+    border-radius: 20px;
+    margin-top: 0.5%;
+    margin-bottom: 15%;
+    position: relative;
+    /* Ensure position is relative for absolute positioning of children */
+    padding-top: 20px;
+    /* Add padding to make space for the dropdowns */
+}
+
+/* New styles for Category and Sort By dropdowns */
+#CategoryDropdown1,
+#SortByDropdown1 {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    /* Add some space between the dropdowns */
+}
+
+#CategoryDropdown1 {
+    margin-left: auto;
+    /* Push the category dropdown to the right */
+}
+
+#CategoryLabel,
+#SortByLabel {
+    font-size: 150%;
+    /* Adjust font size */
+    margin: 0 10px 0 0;
+    padding-top: 0.25%;
+    /* Space between label and select */
+    white-space: nowrap;
+    /* Prevent label from wrapping */
+}
+
+#SortBySelect {
+    width: auto;
+    /* Adjust width based on content */
+    font-size: 1rem;
+    /* Adjust font size */
+    border-radius: 10px;
+    padding: 5px 10px;
+    /* Adjust padding */
+    cursor: pointer;
+}
+
+/* Container for the dropdowns to place them on the top right */
+#DropdownsContainer {
+    position: absolute;
+    top: 20px;
+    /* Adjust top positioning as needed */
+    right: 20px;
+    /* Adjust right positioning as needed */
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    /* Ensure dropdowns are above other content */
+}
+
+
+#TotalProductsCount {
+    margin-top: 2%;
+    margin-bottom: 0%;
+    margin-left: 3%;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+/* The original SortByDropdown will be replaced by DropdownsContainer */
+#SortByDropdown {
+    display: flex;
+    width: 30%;
+    position: absolute;
+    right: -4%;
+    top: 1%;
+}
+
+
+#ProductsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 0%;
+    background-color: #D5E7F1;
+    border-radius: 1%;
+    padding-bottom: 2%;
+    min-height: 82vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FFD700;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    #MoisturizerContainer {
+        flex-direction: row;
+    }
+
+    #LeftPlateProducts {
+        width: 30%;
+    }
+
+    #RightPlateProducts {
+        width: 68%;
+        padding-top: 80px;
+        /* Adjust padding for dropdowns */
+    }
+
+    #ProductsList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Adjust dropdown container position for tablet */
+    #DropdownsContainer {
+        top: 20px;
+        right: 20px;
+    }
+
+    #CategoryDropdown1,
+    #SortByDropdown1 {
+        margin-right: 10px;
+        /* Adjust space between dropdowns */
+    }
+
+    #CategoryLabel,
+    #SortByLabel {
+        font-size: 0.9rem;
+    }
+
+    #SortBySelect {
+        font-size: 0.9rem;
+        padding: 3px 8px;
+    }
+
+    #LeftMinPrice {
+        width: 25%;
+    }
+
+    .RatingsSort {
+        width: 50%;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    #MoisturizerContainer {
+        flex-direction: column;
+    }
+
+    #LeftPlateProducts {
+        width: 95%;
+        margin-left: 2.5%;
+        position: relative;
+        height: auto;
+        min-height: auto;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    #RightPlateProducts {
+        width: 95%;
+        margin-left: 2.5%;
+        padding-top: 100px;
+        /* Adjust padding for dropdowns */
+    }
+
+    #ProductsList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #TotalProductsCount {
+        font-size: 150%;
+    }
+
+    /* Adjust dropdown container for mobile */
+    #DropdownsContainer {
+        position: relative;
+        /* Change to relative positioning */
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+        justify-content: flex-end;
+        /* Align to the right */
+        padding-right: 5%;
+    }
+
+    #CategoryDropdown1,
+    #SortByDropdown1 {
+        margin-right: 10px;
+        /* Adjust space between dropdowns */
+    }
+
+    #CategoryLabel,
+    #SortByLabel {
+        font-size: 0.9rem;
+    }
+
+    #SortBySelect {
+        font-size: 0.9rem;
+        padding: 3px 8px;
+    }
+
+    #LeftMinPrice {
+        width: 22%;
+    }
+
+    .RatingsSort {
+        width: 80%;
+    }
+
+    #ApplyPriceButton {
+        font-size: 120%;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 480px) {
+    #LeftMinPrice {
+        width: 25%;
+        font-size: 120%;
+    }
+
+    #ApplyPriceButton {
+        font-size: 100%;
+    }
+
+    .RatingsSort,
+    #RatingsSortTitle,
+    #ProductsAvail,
+    #PriceSliderTitle {
+        font-size: 120%;
+    }
+
+    #TotalProductsCount {
+        font-size: 120%;
+    }
+
+    #CategoryLabel,
+    #SortByLabel {
+        font-size: 0.8rem;
+        /* Further reduce font size */
+    }
+
+    #SortBySelect {
+        font-size: 0.8rem;
+        /* Further reduce font size */
+        padding: 2px 5px;
+        /* Further reduce padding */
+    }
+}

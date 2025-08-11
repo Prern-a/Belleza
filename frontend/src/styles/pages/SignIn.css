@@ -1,0 +1,437 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#SignInDiv {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.signin-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signin-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftContainer {
+  width: 60%;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#BackToHome {
+  position: absolute;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #53503F;
+  left: 2.5%;
+  top: 0.5%;
+}
+
+#BackToHome:hover {
+  color: #0A0908;
+  cursor: pointer;
+}
+
+#loginText {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 3.5rem;
+}
+
+#loginUsingSocial {
+  font-size: 1rem;
+  text-align: center;
+}
+
+#socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: #53503F;
+}
+
+.fa-facebook {
+  margin-left: 3%;
+}
+
+.fa-google:hover {
+  color: red;
+}
+
+.fa-facebook:hover {
+  color: blue;
+  margin-left: 3%;
+}
+
+#usernameID {
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  margin-top: 1%;
+}
+
+#usernameInput {
+  margin-left: auto;
+  border: solid 3px #171717;
+  width: 80%;
+  max-width: 400px;
+  padding: 1% 1% 1% 1%;
+  background-color: #96E0FC;
+  font-size: 1.5rem;
+  border-radius: 1.4rem;
+  margin-bottom: 1rem;
+  color: #171717;
+}
+
+::placeholder {
+  opacity: 1;
+  color: #171717;
+}
+
+#passwordID {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#passwordInput {
+  width: 100%;
+  border: solid 3px #171717;
+  padding: 1% 1% 1% 1%;
+  background-color: #96E0FC;
+  font-size: 1.5rem;
+  border-radius: 1.4rem;
+  color: #171717;
+  box-sizing: border-box;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.toggleButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4rem;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  border: none;
+  background-color: #171717;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  transition: 0.2s;
+  padding: 2%;
+}
+
+.toggleButton:hover {
+  background-color: #0A0908;
+  color: #1295A6;
+  cursor: pointer;
+}
+
+#submitButton {
+  text-align: center;
+  width: 60%;
+  max-width: 300px;
+  margin: 1rem auto 0;
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #0A0908;
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+#submitButton:hover {
+  border: solid 1px black;
+  background-color: whitesmoke;
+  color: #171717;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#adminButton {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  max-width: 200px;
+  margin: 2rem auto 0;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #1295A6;
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+#adminButton:hover {
+  background-color: #171717;
+  color: #94BCCD;
+  cursor: pointer;
+}
+
+.rightContainer {
+  width: 40%;
+  background-color: #96E0FC;
+  min-height: 100vh;
+  border-left: solid 3px #171717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newHere {
+  font-size: 3rem;
+  text-align: center;
+  color: #171717;
+  margin-top: 1%;
+}
+
+#SignUpText {
+  font-size: 2rem;
+  text-align: center;
+  color: #171717;
+  margin-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.offers-container {
+  width: 100%;
+}
+
+.offers {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #171717;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#Logo {
+  width: 30%;
+  max-width: 150px;
+  margin-top: 20%;
+}
+
+#signUpButton {
+  text-align: center;
+  width: 80%;
+  min-width: 250px;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #171717;
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+#signUpButton:hover {
+  background-color: whitesmoke;
+  color: #171717;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium-sized devices (tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  #loginText {
+    font-size: 2.5rem;
+    padding-top: 10%;
+  }
+
+  #newHere {
+    font-size: 2.5rem;
+  }
+
+  #SignUpText {
+    font-size: 1.5rem;
+  }
+
+  .offers {
+    font-size: 1.2rem;
+  }
+
+  #submitButton,
+  #signUpButton {
+    font-size: 1.5rem;
+  }
+
+  #adminButton {
+    font-size: 1.3rem;
+  }
+
+  .toggleButton {
+    font-size: 1rem;
+    width: 3.5rem;
+  }
+}
+
+/* Small devices (phones, 576px and up) */
+@media only screen and (max-width: 768px) {
+  .signin-wrapper {
+    flex-direction: column;
+  }
+
+  .leftContainer {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 50px;
+  }
+
+  .rightContainer {
+    width: 100%;
+    min-height: auto;
+    border-left: none;
+    border-top: solid 3px #171717;
+    padding: 30px 0 50px;
+  }
+
+  #loginText {
+    font-size: 2rem;
+    padding-top: 8%;
+  }
+
+  #usernameInput {
+    font-size: 1.2rem;
+  }
+
+  #passwordInput {
+    font-size: 1.2rem;
+  }
+
+  .toggleButton {
+    width: 3rem;
+  }
+
+  #submitButton {
+    font-size: 1.3rem;
+  }
+
+  #adminButton {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  #Logo {
+    margin-top: 5%;
+  }
+
+  #newHere {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+
+  #SignUpText {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+
+  .offers {
+    font-size: 1rem;
+  }
+
+  #signUpButton {
+    font-size: 1.3rem;
+    margin-top: 15px;
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 480px) {
+  #loginText {
+    font-size: 1.8rem;
+    padding-top: 15%;
+  }
+
+  .fa {
+    font-size: 2rem;
+  }
+
+  #usernameInput {
+    font-size: 1rem;
+  }
+
+  #passwordID {
+    width: 85%;
+  }
+
+  #passwordInput {
+    font-size: 1rem;
+  }
+
+  .toggleButton {
+    font-size: 0.8rem;
+    width: 2.5rem;
+  }
+
+  #submitButton {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+
+  #adminButton {
+    font-size: 1rem;
+    width: 60%;
+  }
+
+  #newHere {
+    font-size: 1.7rem;
+  }
+
+  #SignUpText {
+    font-size: 1.1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .offers {
+    font-size: 0.9rem;
+  }
+
+  #signUpButton {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+}

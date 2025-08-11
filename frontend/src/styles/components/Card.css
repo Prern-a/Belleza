@@ -1,0 +1,248 @@
+/* Base Card Styles */
+#CardMain {
+    width: 20vw;
+    height: 40vh;
+}
+
+#CardMain img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#Card {
+    position: relative;
+    width: 20vw;
+    height: 40vh;
+    margin-left: 9%;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+#Card:active {
+    cursor: grabbing;
+}
+
+#CardDescDiv {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+
+#CardDescDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#CardAddToCart {
+    position: absolute;
+    top: 85%;
+    left: 18%;
+    margin-left: 0%;
+    width: 64%;
+    height: 10%;
+    font-size: 150%;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#CardAddToCart:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+#Card:hover #CardDescDiv {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+#Card:hover #CardProductName {
+    font-size: 120%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#Card:hover #CardProductPrice {
+    font-size: 120%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#BelleZaFavTag {
+    position: absolute;
+    background-color: white;
+    color: #1295A6;
+    left: 52%;
+    top: 3%;
+    font-size: 120%;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+#CardProductName {
+    text-align: center;
+    font-size: 110%;
+    margin-top: 1%;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-bottom: 0%;
+}
+
+#CardProductName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#CardProductPrice {
+    text-align: center;
+    font-size: 110%;
+    margin-top: 0%;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#CardProductPrice:hover {
+    cursor: pointer;
+}
+
+/* Responsive styles for large tablets and smaller desktops */
+@media screen and (max-width: 1200px) {
+
+    #Card,
+    #CardMain {
+        width: 25vw;
+    }
+
+    #Card {
+        margin-left: 5%;
+    }
+
+    #BelleZaFavTag {
+        font-size: 110%;
+        left: 50%;
+    }
+
+    #CardAddToCart {
+        font-size: 140%;
+    }
+}
+
+/* Responsive styles for tablets */
+@media screen and (max-width: 992px) {
+
+    #Card,
+    #CardMain {
+        width: 28vw;
+    }
+
+    #Card {
+        margin-left: 4%;
+    }
+
+    #BelleZaFavTag {
+        font-size: 100%;
+        left: 48%;
+    }
+
+    #CardAddToCart {
+        font-size: 130%;
+        width: 70%;
+        left: 15%;
+    }
+}
+
+/* Responsive styles for small tablets and large phones */
+@media screen and (max-width: 768px) {
+
+    #Card,
+    #CardMain {
+        width: 42vw;
+        height: 35vh;
+    }
+
+    #Card {
+        margin-left: 5%;
+    }
+
+    #BelleZaFavTag {
+        font-size: 90%;
+        left: 45%;
+        padding-right: 8px;
+    }
+
+    #CardAddToCart {
+        font-size: 120%;
+        top: 83%;
+    }
+
+    #CardProductName,
+    #CardProductPrice {
+        font-size: 100%;
+    }
+
+    #Card:hover #CardProductName,
+    #Card:hover #CardProductPrice {
+        font-size: 110%;
+    }
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 576px) {
+
+    #Card,
+    #CardMain {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    #Card {
+        margin-left: 10%;
+    }
+
+    #BelleZaFavTag {
+        font-size: 100%;
+        left: 50%;
+    }
+
+    #CardAddToCart {
+        font-size: 120%;
+        width: 60%;
+        left: 20%;
+    }
+}
+
+/* Responsive styles for very small mobile */
+@media screen and (max-width: 375px) {
+
+    #Card,
+    #CardMain {
+        height: 35vh;
+    }
+
+    #BelleZaFavTag {
+        font-size: 90%;
+        left: 48%;
+        padding-right: 6px;
+        padding-left: 3px;
+    }
+
+    #CardAddToCart {
+        font-size: 110%;
+    }
+}

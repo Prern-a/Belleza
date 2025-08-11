@@ -1,0 +1,185 @@
+/* CSS (Explore.css) */
+
+.floaters {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+    width: 100%;
+}
+
+/* Common styles for both divisions */
+.division1,
+.division2 {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Division 1 content - image left, text right */
+.division1-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Division 2 content - text left, image right */
+.division2-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.text-button-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.imgleft,
+.imgright {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Text styles */
+.exploretext,
+.discovertext {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.exploretext2,
+.discovertext2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Button styles */
+.buttonExplore {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 30px 3px rgba(147, 112, 216, 0.8);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+    width: fit-content;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.buttonExplore:hover {
+    color: #bbe4e9;
+    background-color: #000;
+    box-shadow: 0 0 20px 10px #bbe4e9;
+    transform: translateY(-3px);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.01);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+
+    .exploretext,
+    .discovertext {
+        font-size: 2rem;
+    }
+
+    .exploretext2,
+    .discovertext2 {
+        font-size: 1.3rem;
+    }
+
+    .buttonExplore {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .division1-content,
+    .division2-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image-container,
+    .text-button-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .exploretext,
+    .discovertext {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .exploretext2,
+    .discovertext2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .buttonExplore {
+        align-self: center;
+        width: auto;
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .exploretext,
+    .discovertext {
+        font-size: 1.5rem;
+    }
+
+    .exploretext2,
+    .discovertext2 {
+        font-size: 1rem;
+    }
+
+    .buttonExplore {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .floaters {
+        margin: 2% 0;
+    }
+}

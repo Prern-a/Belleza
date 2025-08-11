@@ -1,0 +1,266 @@
+/* Landing Page Container */
+#LandingPage {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Carousel Styling */
+.carousel-root {
+    width: 100% !important;
+}
+
+.carousel .slider-wrapper {
+    height: auto;
+}
+
+.carousel .slide {
+    background: #fff;
+    height: auto;
+}
+
+/* Carousel 1 */
+#Carousel1 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    min-height: 880px;
+    background-color: #fff;
+}
+
+#Carousel1Text {
+    color: #000;
+    font-size: 4vw;
+    text-align: center;
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    z-index: 1;
+}
+
+#Carousel1Button {
+    position: absolute;
+    left: 22.5%;
+    top: 60%;
+    padding: 1% 2%;
+    font-size: 2vw;
+    border: 3px solid #61859B;
+    border-radius: 20px;
+    transition: 0.3s;
+    z-index: 1;
+    color: #61859B;
+    background-color: white;
+}
+
+#Carousel1Button:hover {
+    cursor: pointer;
+    color: #61859B;
+    background-color: black;
+}
+
+#Carousel1Img {
+    width: 50%;
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+/* Carousel 2 */
+#Carousel2 {
+    position: relative;
+    min-height: 880px;
+    background-color: #61859B;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Carousel2Text {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    color: whitesmoke;
+    font-size: 3.5vw;
+    width: 100%;
+    max-width: 600px;
+    z-index: 1;
+}
+
+#Carousel2Button {
+    position: absolute;
+    left: 22.5%;
+    top: 60%;
+    background-color: black;
+    color: #61859B;
+    padding: 1% 2%;
+    font-size: 200%;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: solid 3px black;
+    z-index: 1;
+}
+
+#Carousel2Button:hover {
+    cursor: pointer;
+    border: solid 3px black;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#Carousel2Img {
+    width: 45%;
+    max-width: 700px;
+    height: auto;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+/* Carousel 3 */
+#Carousel3 {
+    position: relative;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Carousel3Img {
+    width: 100%;
+    max-height: 91vh;
+    object-fit: cover;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+
+    #Carousel1,
+    #Carousel2,
+    #Carousel3 {
+        min-height: 500px;
+    }
+
+    #Carousel1Text {
+        font-size: 5vw;
+        width: 50%;
+        left: 5%;
+    }
+
+    #Carousel1Button {
+        font-size: 2.5vw;
+        left: 15%;
+    }
+
+    #Carousel2Text {
+        font-size: 4.5vw;
+        width: 45%;
+    }
+
+    #Carousel2Button {
+        font-size: 2.5vw;
+    }
+}
+
+/* Small screens (mobile phones, 576px and up) */
+@media only screen and (max-width: 768px) {
+
+    #Carousel1,
+    #Carousel2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        padding: 40px 0;
+    }
+
+    #Carousel1Text {
+        position: relative;
+        font-size: 6vw;
+        width: 80%;
+        left: 0;
+        top: 0;
+        margin: 20px auto;
+        order: 1;
+    }
+
+    #Carousel1Button {
+        position: relative;
+        font-size: 4vw;
+        left: 0;
+        top: 0;
+        width: auto;
+        padding: 10px 20px;
+        margin: 20px auto;
+        order: 2;
+    }
+
+    #Carousel1Img {
+        width: 90%;
+        margin: 20px auto;
+        order: 3;
+    }
+
+    #Carousel2Text {
+        position: relative;
+        font-size: 6vw;
+        width: 80%;
+        left: 0;
+        top: 0;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #Carousel2Button {
+        position: relative;
+        font-size: 4vw;
+        left: 0;
+        top: 0;
+        width: auto;
+        padding: 10px 20px;
+        margin: 20px auto;
+    }
+
+    #Carousel2Img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #Carousel3 {
+        min-height: auto;
+    }
+
+    #Carousel3Img {
+        max-height: 70vh;
+    }
+}
+
+/* Extra small screens */
+@media only screen and (max-width: 576px) {
+
+    #Carousel1,
+    #Carousel2 {
+        min-height: 350px;
+    }
+
+    #Carousel1Text {
+        font-size: 7vw;
+        width: 90%;
+    }
+
+    #Carousel1Button,
+    #Carousel2Button {
+        font-size: 5vw;
+        padding: 8px 16px;
+    }
+
+    #Carousel2Text {
+        font-size: 7vw;
+        width: 90%;
+    }
+
+    #Carousel3Img {
+        max-height: 60vh;
+    }
+}

@@ -1,0 +1,9 @@
+.body {
+    overflow-x: hidden;
+}
+
+#LandingPage {
+    background: linear-gradient(180deg, #D6EFFE 0%, #ACCFE4 20%, #D5E7F1 25%, #FFFFFF 41%, #275775 69%, #255673 73%, #FDFEFE 83%, #A4D8DC 100%, #FFFFFF 100%);
+    height: 440vh;
+    position: relative;
+}

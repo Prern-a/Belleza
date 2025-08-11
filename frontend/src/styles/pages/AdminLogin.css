@@ -1,0 +1,104 @@
+.Admin {
+    
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondsection {
+    align-items: center;
+    background-color: rgb(0, 255, 255, 0.25);
+    height: 70vh;
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    filter: blur(-16px);
+    box-shadow: 0px 0px 100px 0px rgb(255, 255, 255, 1);
+}
+
+#admin_usernames {
+    font-size: 200%;
+    font-family: fangsong;
+    color: aliceblue;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+#admin_passwords {
+    font-size: 200%;
+    font-family: fangsong;
+    color: aliceblue;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.admin_content {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    row-gap: 10px;
+    justify-content: flex-start;
+}
+
+p.admin_login {
+    font-size: 300%;
+    font-family: fangsong;
+    margin-bottom: 0;
+    margin-top: 18%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+input#admin_username {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 3% !important;
+    font-size: 150%;
+    width: 90%;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+input#admin_password {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 3% !important;
+    font-size: 150%;
+    width: 90%;
+    margin-left: 2%;
+    padding: 1%;
+
+}
+
+::placeholder {
+    color: black;
+}
+
+button.login {
+    background-color: black;
+    color: white;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    border-radius: 10px;
+    border: none;
+    padding: 2%;
+    font-size: 20px;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 200%;
+}
+
+button.login:hover {
+    background-color: white;
+    color: black;
+}

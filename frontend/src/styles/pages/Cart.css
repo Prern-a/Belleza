@@ -1,0 +1,471 @@
+/* Base styling - Improved version */
+#CartContainer {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+#CartLeftDiv {
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 1%;
+    padding: 3px;
+    border: 1px solid gray;
+    height: auto;
+    min-height: 74vh;
+}
+
+#YourCartTitle {
+    font-size: 200%;
+    margin-left: 3%;
+}
+
+#CartHeader {
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#CartProductComponent {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    padding: 1.5%;
+    margin-top: 1%;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 97.75%;
+    min-height: 150px;
+}
+
+#CartProductImage {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    max-height: 150px;
+}
+
+#CartProductName {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 150%;
+    margin: 0;
+}
+
+#CartProductPrice {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 150%;
+    background-color: grey;
+    padding: 1%;
+    padding-top: 1.5%;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    margin: 0;
+}
+
+#CartDeleteButton {
+    grid-column: 2;
+    grid-row: 3;
+    width: 80%;
+    font-size: 120%;
+    background-color: lightcoral;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+#CartDeleteButton:hover {
+    box-shadow: 0px 0px 20px red;
+}
+
+#CartQuantityContainer {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#CartQuantityLeft {
+    font-size: 200%;
+    margin-right: 3%;
+    transition: 0.5s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#CartQuantityLeft:hover {
+    background-color: black;
+    color: white;
+}
+
+#CartQuantity {
+    font-size: 200%;
+    margin: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: 1px solid black;
+}
+
+#CartQuantityRight {
+    font-size: 200%;
+    margin-left: 3%;
+    transition: 0.5s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#CartQuantityRight:hover {
+    background-color: black;
+    color: white;
+}
+
+#CartProductTotal {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 180%;
+    justify-self: flex-start;
+    margin: 0;
+}
+
+#CartProductsDiv {
+    height: auto;
+    max-height: 74vh;
+    overflow: auto;
+}
+
+#CartRightDiv {
+    position: sticky;
+    top: 10%;
+    width: 25%;
+    margin-top: 1%;
+    margin-left: 1%;
+    padding: 3px;
+    border: 1px solid gray;
+    height: fit-content;
+    max-height: 25vh;
+}
+
+#CartOrderSummary {
+    font-size: 150%;
+    text-align: center;
+}
+
+#CartOrderItems {
+    font-size: 150%;
+    margin-left: 3%;
+    font-weight: 400;
+}
+
+#CartOrderSubtotal {
+    font-size: 150%;
+    margin-left: 3%;
+    font-weight: 400;
+}
+
+#CartGPayButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* Large laptops and desktops (1200px and up) */
+@media only screen and (min-width: 1201px) {
+    #CartLeftDiv {
+        width: 60%;
+        margin-left: 10%;
+    }
+
+    #CartRightDiv {
+        width: 20%;
+    }
+}
+
+/* Laptops (992px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #CartLeftDiv {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    #CartRightDiv {
+        width: 25%;
+    }
+}
+
+/* Tablets and small laptops (768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #CartLeftDiv {
+        width: 65%;
+        margin-left: 3%;
+    }
+
+    #CartRightDiv {
+        width: 25%;
+    }
+
+    #CartProductName {
+        font-size: 130%;
+    }
+
+    #CartProductPrice {
+        font-size: 110%;
+    }
+
+    #CartQuantity,
+    #CartQuantityLeft,
+    #CartQuantityRight {
+        font-size: 170%;
+    }
+
+    #CartProductTotal {
+        font-size: 150%;
+    }
+
+    #CartDeleteButton {
+        font-size: 110%;
+    }
+}
+
+/* Medium tablets (600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #CartContainer {
+        flex-direction: column;
+    }
+
+    #CartLeftDiv {
+        width: 90%;
+        margin: 5% auto;
+        height: auto;
+        min-height: 0;
+    }
+
+    #CartProductsDiv {
+        max-height: none;
+        height: auto;
+    }
+
+    #CartRightDiv {
+        width: 90%;
+        margin: 5% auto;
+        position: relative;
+        top: 0;
+    }
+
+    #CartHeader h1 {
+        font-size: 120%;
+        margin-right: 20%;
+    }
+
+    #CartProductTotal {
+        font-size: 150%;
+    }
+
+    #CartProductPrice {
+        font-size: 110%;
+        padding: 1%;
+    }
+
+    #CartDeleteButton {
+        font-size: 110%;
+        padding: 1%;
+        width: 90%;
+    }
+}
+
+/* Small tablets and large phones (480px to 600px) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    #CartProductComponent {
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 350px;
+    }
+
+    #CartProductImage {
+        width: 40%;
+        margin: 0 auto;
+        max-height: 120px;
+    }
+
+    #CartProductName {
+        width: 100%;
+        font-size: 130%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    #CartProductPrice {
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 120%;
+    }
+
+    #CartDeleteButton {
+        width: 60%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 120%;
+    }
+
+    #CartQuantityContainer {
+        justify-content: center;
+        margin: 15px auto;
+    }
+
+    #CartProductTotal {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 150%;
+    }
+
+    #CartHeader {
+        display: none;
+    }
+}
+
+/* Extra small devices (phones, 320px to 480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    #YourCartTitle {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    #CartOrderSummary,
+    #CartOrderItems,
+    #CartOrderSubtotal {
+        font-size: 120%;
+    }
+
+    #CartProductComponent {
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 350px;
+    }
+
+    #CartProductName {
+        font-size: 120%;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #CartProductPrice {
+        font-size: 110%;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #CartDeleteButton {
+        font-size: 110%;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #CartQuantityContainer {
+        justify-content: center;
+        margin: 15px auto;
+    }
+
+    #CartQuantity,
+    #CartQuantityLeft,
+    #CartQuantityRight {
+        font-size: 150%;
+    }
+
+    #CartProductTotal {
+        font-size: 130%;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #CartGPayButton {
+        transform: scale(0.9);
+    }
+}
+
+/* Very small devices (320px and down) */
+@media only screen and (max-width: 320px) {
+
+    #CartLeftDiv,
+    #CartRightDiv {
+        width: 95%;
+        margin: 2% auto;
+    }
+
+    #YourCartTitle {
+        font-size: 130%;
+    }
+
+    #CartProductComponent {
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 300px;
+    }
+
+    #CartProductName {
+        font-size: 110%;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #CartProductPrice {
+        font-size: 100%;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #CartDeleteButton {
+        font-size: 100%;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #CartQuantityContainer {
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    #CartQuantity,
+    #CartQuantityLeft,
+    #CartQuantityRight {
+        font-size: 120%;
+    }
+
+    #CartProductTotal {
+        font-size: 120%;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #CartGPayButton {
+        transform: scale(0.8);
+    }
+}

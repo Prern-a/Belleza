@@ -1,0 +1,300 @@
+#AdminAddImageDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 3%;
+    width: 20%;
+    left: 12.5%;
+}
+
+#AdminImageSelect{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    padding-top: 73.2%;
+    padding-right: 14%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#AdminImageSelect1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding-top: 45.5%;
+    padding-right: 1%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#AdminImageSelect2{
+    position: absolute;
+    top: 0%;
+    left: 74%;
+    padding-top: 45.5%;
+    padding-right: 1%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#AddImagePlus{
+    font-size: 2000%;
+    margin: 0%;
+    top: -27%;
+    position: absolute;
+    cursor: pointer;
+    z-index: -1;
+}
+
+#AddImagePlus1{
+    font-size: 2000%;
+    margin: 0%;
+    top: -45%;
+    left: 2%;
+    position: absolute;
+    cursor: pointer;
+    z-index: -1;
+}
+
+#AddImagePlus2{
+    font-size: 2000%;
+    margin: 0%;
+    top: -47%;
+    left: 77%;
+    position: absolute;
+    cursor: pointer;
+    z-index: -1;
+}
+
+#ProductNull{
+    width: 80%;
+    border-radius: 1%;
+    margin-left: 0%;
+}
+
+#ProductNull1{
+    width: 50%;
+    border-radius: 1%;
+}
+
+#ProductNull2{
+    width: 50%;
+    border-radius: 1%;
+    margin-left: 24%;
+}
+
+#UploadProductImage{
+    font-size: 120%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+
+#UploadProductImage1{
+    font-size: 120%;
+    position: absolute;
+    top: 95%;
+    left: 6%;
+}
+
+#UploadProductImage2{
+    font-size: 120%;
+    position: absolute;
+    top: 95%;
+    left: 79%;
+    width: 100%;
+}
+
+#AddProductDetailsHeader{
+    font-size: 300%;
+    text-align: center;
+    margin: 0%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+#AdminAddProductDetailsDiv{
+    position: absolute;
+    background-color: lightgray;
+    height: 88vh;
+    width: 50%;
+    left: 45%;
+    border-radius: 25px;
+    margin-top: 0.5%;
+}
+
+#AddProductDetailsNameLabel{
+    font-size: 150%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+}
+
+#AddProductDetailsName{
+    width: 92%;
+    margin-left: 3%;
+    font-size: 120%;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#AddProductDetailsDescLabel{
+    font-size: 150%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#AddProductDetailsDesc{
+    width: 92%;
+    margin-left: 3%;
+    font-size: 120%;
+    border-radius: 10px;
+    border: solid 2px black;
+    padding: 1%;
+    resize: none;
+}
+
+#AddProductDetailsItemLabel{
+    font-size: 150%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#AddProductDetailsItem{
+    width: 92%;
+    margin-left: 3%;
+    font-size: 120%;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#AddProductDetailsCatLabel{
+    font-size: 150%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#CategorySelect{
+    font-size: 120%;
+    width: 40%;
+    margin-left: 3%;
+    padding: 1%;
+    border-radius: 10px;
+    border: solid 2px black;
+    cursor: pointer;
+}
+
+#AddProductDetailsPriceLabel{
+    font-size: 150%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#AddProductDetailsPrice{
+    width: 92%;
+    margin-left: 3%;
+    font-size: 120%;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#BelleZaFavQues{
+    font-size: 150%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#BelleZaFavSelect{
+    font-size: 120%;
+    width: 10%;
+    margin-left: 3%;
+    padding: 1%;
+    border-radius: 10px;
+    border: solid 2px black;
+    cursor: pointer;
+}
+
+#AddProductButton{
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 180%;
+    margin-left: 35%;
+    margin-top: 4%;
+    border-radius: 20px;
+    border: solid 3px black;
+    transition: 0.3s;
+}
+
+#AddProductButton:hover{
+    cursor: pointer;
+    background-color: #171717;
+    color: whitesmoke;
+    border: solid 3px white;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#LoginDialog{
+    position: absolute;
+    top: 10%;
+    width: 30%;
+    height: 250px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
+    transition: 0.5s;
+}
+
+#DialogSignInButton{
+    width: 30%;
+    font-size: 200%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background-color: #1295A6;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+#DialogSignInButton:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #1295A6;
+}
+
+#DialogSignUpLink{
+    font-size: 150%;
+    text-decoration: none;
+    margin-top: 3%;
+    color: blue;
+    transition: 0.4s;
+}
+
+#DialogSignUpLink:hover{
+    font-size: 160%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+#DialogClose{
+    position: absolute;
+    font-size: 200%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    border: none;
+    left: 92%;
+    top: 1%;
+}
+
+#DialogClose:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 3px black;
+}

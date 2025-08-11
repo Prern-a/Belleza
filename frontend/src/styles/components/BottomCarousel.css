@@ -1,0 +1,23 @@
+.imgcarousel {
+    width: 90%;
+    border-radius: 30px;
+    transition: transform 0.4s ease;
+    margin-left: 5%;
+}
+
+.imgcarousel:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.imglanding {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+#newarr {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: emoji;
+}

@@ -1,0 +1,63 @@
+.Pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaf3f3; /* Soothing light teal background */
+  }
+  
+  .payment_box {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    border-top: 5px solid #00a86b; /* Accent color for the NGO */
+  }
+  
+  .payment_box h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .payment_box p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 25px;
+  }
+  
+  .payment_box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .payment_box input:focus {
+    border-color: #00a86b;
+    outline: none;
+  }
+  
+  .payment_box .google-pay-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .payment_box .google-pay-button div {
+    border-radius: 8px !important;
+    overflow: hidden;
+  }
+  
+  .footer-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777777;
+  }

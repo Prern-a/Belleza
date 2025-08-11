@@ -1,0 +1,122 @@
+.rate {
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.rating1 {
+    text-align: justify;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 16px 8px;
+    /* Reduced horizontal margins */
+    width: calc(100% - 16px);
+    /* Calculate width accounting for margins */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+    min-height: 50px;
+    height: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .rating1 {
+        font-size: 0.9rem;
+        padding: 10px;
+        margin: 10px 6px;
+        /* Reduced horizontal margins */
+    }
+}
+
+@media (max-width: 576px) {
+    .rating1 {
+        font-size: 0.85rem;
+        padding: 8px;
+        margin: 8px 4px;
+        /* Reduced horizontal margins */
+    }
+}
+
+#rate {
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 800;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 15px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #rate {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #rate {
+        font-size: 1.5rem;
+    }
+}
+
+.ratebox {
+    height: 320px;
+    overflow-y: auto;
+    padding: 0 5px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+    /* Set width to 100% */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+.ratebox::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .ratebox {
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ratebox {
+        height: 250px;
+    }
+}
+
+.rating_container {
+    width: 45%;
+    border-radius: 20px;
+    background-color: #61859B;
+    min-height: 400px;
+    margin-top: 1%;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    /* Added horizontal padding */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+@media (max-width: 992px) {
+    .rating_container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .rating_container {
+        width: 95%;
+    }
+}

@@ -1,0 +1,231 @@
+/* Footer Container */
+.footer-case {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer {
+    min-height: 26vh;
+    background-color: white;
+    border-top: solid 2px black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+}
+
+/* Footer Sections */
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.customer-care {
+    width: 15%;
+}
+
+.about-us {
+    width: 11%;
+}
+
+.information {
+    width: 21%;
+}
+
+.subscribe {
+    width: 25%;
+}
+
+.social {
+    width: 20%;
+}
+
+/* Footer Headings */
+.footer-heading {
+    font-size: 150%;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link {
+    font-size: 120%;
+    text-decoration: none;
+    color: #171717;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Subscribe Form */
+.footer-subscribe-form {
+    display: flex;
+    width: 100%;
+}
+
+.footer-input {
+    font-size: 120%;
+    padding: 0.25%;
+    width: 65%;
+    border: 1px solid #ccc;
+}
+
+.footer-subscribe-btn {
+    background-color: #171717;
+    color: white;
+    font-size: 120%;
+    padding: 0.25% 0.5%;
+    border: 1px solid #171717;
+    cursor: pointer;
+}
+
+.footer-subscribe-btn:hover {
+    background-color: white;
+    color: #171717;
+}
+
+/* Social Icons */
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-icon {
+    width: 30px;
+    height: auto;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-divider {
+    margin: 5px 0;
+    border: none;
+    height: 3px;
+}
+
+.footer-divider.primary {
+    background-color: #9CD0E4;
+}
+
+.footer-divider.secondary {
+    background-color: #94BCCD;
+}
+
+.footer-copyright {
+    font-size: 120%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+
+    .customer-care,
+    .about-us,
+    .information {
+        width: 20%;
+    }
+
+    .subscribe {
+        width: 35%;
+    }
+
+    .social {
+        width: 25%;
+    }
+
+    .footer-heading {
+        font-size: 130%;
+    }
+
+    .footer-link,
+    .footer-input,
+    .footer-subscribe-btn {
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        padding: 3% 5%;
+    }
+
+    .customer-care,
+    .about-us,
+    .information {
+        width: 30%;
+    }
+
+    .subscribe,
+    .social {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 4% 5%;
+    }
+
+    .customer-care,
+    .about-us,
+    .information {
+        width: 50%;
+    }
+
+    .subscribe,
+    .social {
+        width: 100%;
+    }
+
+    .footer-subscribe-form {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 5% 5%;
+    }
+
+    .customer-care,
+    .about-us,
+    .information,
+    .subscribe,
+    .social {
+        width: 100%;
+    }
+
+    .footer-heading {
+        font-size: 120%;
+        margin-bottom: 10px;
+    }
+
+    .footer-link {
+        font-size: 100%;
+    }
+
+    .footer-social-icons {
+        justify-content: flex-start;
+    }
+
+    .footer-social-icon {
+        width: 25px;
+    }
+
+    .footer-copyright {
+        font-size: 100%;
+    }
+}

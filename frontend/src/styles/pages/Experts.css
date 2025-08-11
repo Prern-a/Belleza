@@ -1,0 +1,130 @@
+#ExpertCard {
+    width: 24%;
+    background-color: white;
+    height: 89vh;
+    margin-top: 1vh;
+    margin-left: 0.5%;
+    margin-right: 0.25%;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#ExpertCard:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 40px rgba(18, 149, 166, 0.5);
+}
+
+#ExpertName {
+    font-size: 200%;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+#ExpertImg {
+    width: 100%;
+    margin-top: 1%;
+}
+
+#ExpertDesc {
+    font-size: 150%;
+    margin-left: 2%;
+    width: 96%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#ExpertButton {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 200%;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#ExpertButton:hover {
+    cursor: pointer;
+    background-color: #1295A6;
+    box-shadow: 0px 0px 40px rgba(18, 149, 166, 0.5);
+}
+
+#mainDialog {
+    width: 40%;
+    height: 50%;
+    border-radius: 25px;
+    border: solid 5px #1295A6;
+}
+
+#DialogCloseButton {
+    background-color: #1295A6;
+    right: 3%;
+    top: 3%;
+    padding: 1%;
+    color: #f4f2f3;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    width: 6%;
+}
+
+#DialogCloseButton:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+    color: black;
+}
+
+#TimeSelectMenus {
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+}
+
+#TimeStarting {
+    margin-right: 1%;
+    width: 30%;
+}
+
+#TimeEnding {
+    margin-left: 1%;
+    width: 30%;
+}
+
+.allSelects {
+    padding: 3%;
+    margin-left: 3%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+    border-radius: 10px;
+    font-size: 120%;
+    font-weight: bold;
+    color: #1295A6;
+}
+
+.allSelects:hover {
+    cursor: pointer;
+}
+
+#ExpertSubmit {
+    width: 40%;
+    font-size: 250%;
+    margin-left: 30%;
+    border-radius: 10px;
+    background-color: #1295A6;
+    color: whitesmoke;
+    margin-top: 3%;
+}
+
+#ExpertSubmit:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 40px rgba(18, 149, 166, 0.5);
+}
+
+#DateSelect {
+    width: 100%;
+    font-size: 160%;
+    margin-left: 3%;
+    margin-top: 7%;
+}
