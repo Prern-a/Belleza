@@ -183,7 +183,7 @@ function Cart() {
   const downloadReceipt = async (orderDetails) => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/generate-pdf",
+        "https://belleza-xsg5.onrender.com/generate-pdf",
         orderDetails,
         {
           responseType: "blob",
@@ -202,7 +202,7 @@ function Cart() {
 
   const sendReceiptByEmail = async (email, orderDetails) => {
     try {
-      const response = await axios.post("http://localhost:3001/send-receipt", {
+      const response = await axios.post("http://belleza-xsg5.onrender.com/send-receipt", {
         email,
         orderDetails,
       });
